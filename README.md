@@ -7,6 +7,8 @@ These are the CSS and templates for my Korean vocab deck. I mainly import entrie
 ## Installation
 Add files with leading underscores to your Anki ```collection.media``` folder. Copy and paste the front template, main styling, and back template into a card template.
 
+(Or just load the included .apkg file and build from there.)
+
 This deck template works best with Google TTS through the [AwesomeTTS extension](https://ankiweb.net/shared/info/1436550454).
 
 The deck uses [the awesome Balloon.css pure css tooltip library](https://github.com/kazzkiq/balloon.css), as well as [Noto CJK KR](https://www.google.com/get/noto/help/cjk/) and [Nanum Brush Script](https://fonts.google.com/specimen/Nanum+Brush+Script) fonts and the DayMode style incorporates [Solarized](https://github.com/altercation/solarized).
