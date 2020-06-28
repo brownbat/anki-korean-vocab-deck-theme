@@ -1,0 +1,15 @@
+@import url("_korean_errata.css");
+
+@import url("_balloon.css");
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local("Noto Sans CJK KR"), url('_noto-sans-kr.woff2') format('woff2');}
+
+@font-face {
+  font-family: 'Noto Serif';
+  src:  local('Noto Serif CJK KR'), url('_noto-serif-kr.woff2') format('woff2');}
+
+@font-face {
+  font-family: 'Nanum Brush Script';
+  src:  local('Nanum Brush Script'), url('_nanum-brush.woff') format('woff');}

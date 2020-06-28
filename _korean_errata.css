@@ -1,0 +1,265 @@
+@import url("_balloon.css");
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: local("Noto Sans CJK KR"), url('_noto-sans-kr.woff2') format('woff2');}
+
+@font-face {
+  font-family: 'Noto Serif';
+  src:  local('Noto Serif CJK KR'), url('_noto-serif-kr.woff2') format('woff2');}
+
+/*
+@font-face {
+  font-family: 'Brush';
+  src:  local("SangSangShin"), url('_sangsangshin.woff') format('woff');}
+*/
+
+@font-face {
+  font-family: 'Brush';
+  src:  local('Nanum Brush Script'), url('_nanum-brush.woff') format('woff');}
+*/
+
+/* Nanum Brush:Noto Serif = 9:7.2 (11.3/9)
+ * SangSangShin:Noto Serif::9:7.67
+ * */
+
+
+
+.grid-front-container {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 2.7fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  "question question question"
+  ". answer .";
+  gap: 3vw 1vw;
+}
+
+.card{
+    /* Solarized */
+    --base03:#002b36;
+    --base02:#073642;
+    --base01:#586e75;
+    --base00:#657b83;
+    --base0:#839496;
+    --base1:#93a1a1;
+    --base2:#eee8d5;
+    --base3:#fdf6e3;
+    --yellow:#b58900;
+    --orange:#cb4b16;
+    --red:#dc322f;
+    --magenta:#d33682;
+    --violet:#6c71c4;
+    --blue:#268bd2;
+    --cyan:#2aa198;
+    --green:#859900;
+
+    --text-color:var(--base00);
+    --background-color:var(--base3);
+    --balloon-background-color:var(--base2);
+    --inverted-background-color:var(--base2);
+    --inverted-text-color:var(--base01);
+    --muted-text-color:var(--base1);
+    --missed-text-color: var(--base01);
+    --missed-underline-color: var(--red);
+    --missed-background-color: var(--selection-background-color);
+    --errata-subhead-color: var(--cyan);
+    --errata-text-color: var(--muted-text-color);
+
+    --selection-text-color: var(--base01);
+    --selection-background-color: var(--base2);
+
+    --errata-selection-text-color: var(--cyan);
+    --errata-selection-background-color: var(--base2);
+
+    font-family: "Noto Sans";
+    text-align:center;
+    font-size:2vw;
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+}
+
+.card.nightMode {
+    --text-color:#ACF;
+    --background-color:#20202C;
+    --balloon-background-color:#247;
+    --inverted-background-color:#bde;
+    --inverted-text-color:#47a;
+    --muted-text-color:#7ad;
+    --missed-text-color: var(--text-color);
+    --missed-underline-color: var(--red);
+    --missed-background-color: var(--background-color);
+    --errata-subhead-color: #aea;
+    --errata-text-color: #7b7;
+
+    --selection-text-color: #acf;
+    --errata-selection-text-color: #aea;
+
+    /*problem colors - nightmode inversion still active*/
+    --selection-background-color: #acf; /* inverts to #5073aa */
+    --errata-selection-background-color: #aea; /* inverts to #509455 */
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+    }
+
+::selection {
+  /* nightMode sets highlight-color to #acf,
+   * but that is inverted to #5073aa in nightmode */
+  /* .card.nightMode::selection {} doesn't seem to work
+   * we're just setting these variables in .card.nightMode and
+   * anticipating the inversion */
+  background: var(--selection-background-color);
+  color: var(--selection-text-color);
+}
+
+hr#answer {
+  height:1px;
+  width:50vw;
+  background:var(--text-color);
+  color:var(--text-color);
+  border-width:0px;
+}
+
+.kr {
+    --balloon-color:var(--balloon-background-color);
+    --balloon-font-size: 1.5vw;
+    --balloon-move: 2.5vw;
+    --balloon-text-color: var(--text-color);
+    --balloon-border-radius: 7px;
+
+    font-family: "Noto Serif";
+    font-size: 9vw;
+    grid-area: question;
+    place-self:center;
+    color: var(--text-color);
+}
+
+.nightMode .kr {
+    --balloon-color:var(--balloon-background-color);
+    --balloon-text-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.kr:hover {
+    font-family: "Brush";
+    font-size: 11.2vw;
+}
+
+input {
+    font-size:4vw !important;
+    height:5vw;
+    border-style: solid red;
+    background-color:var(--inverted-background-color);
+}
+
+
+#typeans{
+    font-size:3vw;
+    color: var(--inverted-text-color);
+    text-align:center;
+}
+
+.typeGood {
+   width:500px;
+    background: var(--background-color);
+}
+
+.typeBad {
+    background: var(--selection-background-color);
+}
+
+.typeMissed {
+    background: var(--missed-background-color);
+    color: var(--missed-text-color);
+    text-decoration: var(--missed-underline-color) underline wavy;
+    text-decoration-skip: spaces;
+}
+
+.grid-back-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  gap: 1px 1px;
+}
+
+.backEnglish{
+    place-self:center;
+    grid-column: 2;
+    font-size:7vw;
+    color: var(--text-color);
+    padding-top:2vw;
+}
+
+.partOfSpeech {
+    color: var(--muted-text-color);
+    grid-column: 2;
+    place-self:center;
+}
+
+.subhead{
+    text-align:left;
+    color: var(--errata-subhead-color);
+    grid-column: 1;
+}
+
+.hanja {
+    font-family: "Noto Serif";
+    font-size: 9vw;
+    grid-column: 2;
+    place-self:top;
+    color: var(--text-color);
+    padding-bottom:3vw;
+}
+
+.errata {
+    margin-bottom:30px;
+    grid-column: 2 / span 2;
+    text-align:left;
+    color: var(--errata-text-color);
+}
+
+.errata::selection, .subhead::selection {
+/* this is inverted from #aea to #509455 in nightmode */
+/* .nightMode.errata::selection doesn't work */
+  background: var(--errata-selection-background-color);
+/* this is not inverted in nightMode and stays #aea */
+  color: var(--errata-selection-text-color);
+}
+
+.errata > br::selection {
+/* see .errata::selection for nightMode bug */
+  background: var(--errata-selection-background-color)
+  color: var(--errata-selection-text-color);
+}
+
+a:link {
+  color: var(--muted-text-color);
+}
+
+/* visited link */
+a:visited {
+  color: var(--errata-text-color);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--errata-subhead-color);
+}
+
+/* UNUSED: These can be used to place each font explicitly on the template */
+.fonts1{
+    font-size:7vw;
+    place-self:center;
+    color: var(--text-color);
+    font-family:"Noto Sans";
+}
+
+.fonts2{
+    font-size:7vw;
+    place-self:center;
+    color: var(--text-color);
+    font-family:"Nanum Brush Script";
+}
