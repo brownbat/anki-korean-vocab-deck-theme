@@ -193,6 +193,21 @@ input {
     padding-top:2vw;
 }
 
+.backKr {
+    place-self:center;
+    grid-column: 1 / span 3;
+    grid-row: 1/span 1;
+    font-family: 'Noto Serif';
+    font-size: 9vw;
+    color: var(--text-color);
+    padding-top:2vw;
+}
+.backKr:hover {
+    font-family: "Brush";
+    font-size: 11.2vw;
+}
+}
+
 .partOfSpeech {
     color: var(--muted-text-color);
     grid-column: 2;
