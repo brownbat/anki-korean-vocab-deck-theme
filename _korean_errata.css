@@ -138,6 +138,20 @@ hr#answer {
     color: var(--text-color);
 }
 
+.question {
+    --balloon-color:var(--balloon-background-color);
+    --balloon-font-size: 1.5vw;
+    --balloon-move: 2.5vw;
+    --balloon-text-color: var(--text-color);
+    --balloon-border-radius: 7px;
+
+    font-family: "Noto Serif";
+    font-size: 9vw !important;
+    grid-area: question;
+    place-self:center;
+    color: var(--text-color);
+}
+
 .nightMode .kr {
     --balloon-color:var(--balloon-background-color);
     --balloon-text-color: var(--text-color);
@@ -183,6 +197,14 @@ input {
   display: grid;
   grid-template-columns: 2fr 5fr 2fr;
   gap: 1px 1px;
+}
+
+.backEnglish{
+    place-self:center;
+    grid-column: 2;
+    font-size:7vw;
+    color: var(--text-color);
+    padding-top:2vw;
 }
 
 .backEnglish{
