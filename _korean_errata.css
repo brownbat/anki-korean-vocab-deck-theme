@@ -197,8 +197,15 @@ input {
   grid-template-columns: 2fr 5fr 2fr;
   grid-template-areas:
   "answer answer answer"
-  ". pos ."
-  "subhead errata errata";
+  "pos pos pos"
+  "subhead errata errata"
+  "subhead errata errata"
+  "subhead errata errata"
+  "subhead errata errata"
+  "subhead errata errata"
+  "subhead errata errata"
+  "subhead errata errata"
+  ;
   gap: 1px 1px;
 }
 
@@ -230,8 +237,9 @@ input {
 }
 
 .subhead{
-    grid-area: subhead;
     color: var(--errata-subhead-color);
+    place-self:left;
+    text-align: left;
     grid-column: 1;
 }
 
