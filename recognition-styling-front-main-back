@@ -2,11 +2,22 @@
 
 <div class="grid-front-container">
 
-    <span class='question'>
-            {{English}}
+{{#Hint}}
+        <span class='kr' aria-label="{{Hint}}" data-balloon-length="medium" data-balloon-pos="down" >
+            <tts service="googletts" pitch="0.0" profile="default" speed="1.0" voice="ko-KR-Wavenet-B">
+                {{Korean}}
+            </tts>
+        </span>
+{{/Hint}}
+{{^Hint}}
+    <span class='kr'>
+        <tts service="googletts" pitch="0.0" profile="default" speed="1.0" voice="ko-KR-Wavenet-B">
+            {{Korean}}
+        </tts>
     </span>
+{{/Hint}}
     <span class="eng" style="grid-column-start:2; grid-row-start:2;">
-            {{type:Korean}}
+            {{type:English}}
     </span>
 </div>
 
@@ -41,7 +52,7 @@
 {{FrontSide}}
 <hr id=answer>
 <div class="grid-back-container">
-    <span class="backKr">{{edit:Korean}}</span>
+    <span class="backEnglish">{{edit:English}}</span>
 
     {{#Part of speech}}
     <span class="partOfSpeech">({{Part of speech}})</span>
@@ -78,12 +89,12 @@
     {{/한국어 사전}}
 
     {{#Other sentences}}
-    <span class='subhead'>Other sentences:</span>
+    <span class='subhead';>Other sentences:</span>
     <span class='errata'>{{Other sentences}}</span>
     {{/Other sentences}}
 
     {{#Other notes}}
-    <span class='subhead'>Other notes:</span>
+    <span class='subhead';>Other notes:</span>
     <span class='errata'>{{Other notes}}</span>
     {{/Other notes}}
 
