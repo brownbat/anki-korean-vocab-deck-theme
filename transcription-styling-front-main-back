@@ -18,7 +18,7 @@ Other notes
 *** FRONT ***
 
 Transcribe:
-
+<br>
 {{#Audio}}<span style="grid-column:1; font-size:1.7vw; text-align:left;">
         <a href="{{Audio}}">Original audio</a></span>
 {{/Audio}}
