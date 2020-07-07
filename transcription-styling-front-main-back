@@ -18,16 +18,13 @@ Other notes
 *** FRONT ***
 
 Transcribe:
-</br>
-{{Audio}}
 
-<br>
+{{#Audio}}<span style="grid-column:1; font-size:1.7vw; text-align:left;">
+        <a href="{{Audio}}">Original audio</a></span>
+{{/Audio}}
 
 {{type:Korean}}
-
-
 <tts service="googletts" pitch="0.0" profile="default" speed="1.0" voice="ko-KR-Wavenet-B" style="display: none">{{Korean}}</tts>
-
 
 *** MAIN ***
 
