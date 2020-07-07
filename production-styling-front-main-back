@@ -1,3 +1,20 @@
+*** FIELDS ***
+
+Korean
+English
+Note
+Common usages
+Part of speech
+Example sentences
+Audio
+Other meanings
+Hanja
+Hint
+한국어 사전
+Other sentences
+Other notes
+
+
 *** FRONT ***
 
 <div class="grid-front-container">
@@ -9,9 +26,6 @@
             {{type:Korean}}
     </span>
 </div>
-
-
-*** /FRONT ***
 
 
 *** MAIN ***
@@ -33,9 +47,6 @@
   src:  local('Nanum Brush Script'), url('_nanum-brush.woff') format('woff');}
 
 
-*** /MAIN ***
-
-
 *** BACK ***
 
 {{FrontSide}}
@@ -52,10 +63,10 @@
     <span class='hanja'>{{Hanja}}</span>
     {{/Hanja}}
 
-    {{#Alternate meanings}}
-    <span class="subhead">Alternate meanings:</span>
-    <span class='errata'>{{Alternate meanings}}</span>
-    {{/Alternate meanings}}
+    {{#Other meanings}}
+    <span class="subhead">Other meanings:</span>
+    <span class='errata'>{{Other meanings}}</span>
+    {{/Other meanings}}
 
     {{#Note}}
     <span class="subhead">Note:</span>
@@ -97,5 +108,3 @@
         Tags: {{Tags}}
     </span>{{/Tags}}
 </div>
-
-*** /BACK ***

@@ -7,11 +7,11 @@ Common usages
 Part of speech
 Example sentences
 Audio
-Alternate definitions
+Other meanings
 Hanja
 Hint
 한국어 사전
-Dictionary sentence
+Other sentences
 Other notes
 
 
@@ -79,10 +79,10 @@ Other notes
     <span class='errata'>{{Note}}</span>
     {{/Note}}
 
-    {{#Alternate definitions}}
-    <span class="subhead">Alternate definitions:</span>
-    <span class='errata'>{{Alternate definitions}}</span>
-    {{/Alternate definitions}}
+    {{#Other meanings}}
+    <span class="subhead">Other meanings:</span>
+    <span class='errata'>{{Other meanings}}</span>
+    {{/Other meanings}}
 
     {{#Common usages}}
     <span class="subhead">Common usages:</span>
