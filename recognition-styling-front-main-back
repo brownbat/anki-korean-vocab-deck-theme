@@ -1,3 +1,20 @@
+*** FIELDS ***
+
+Korean
+English
+Note
+Common usages
+Part of speech
+Example sentences
+Audio
+Alternate definitions
+Hanja
+Hint
+한국어 사전
+Dictionary sentence
+Other notes
+
+
 *** FRONT ***
 
 <div class="grid-front-container">
@@ -22,9 +39,6 @@
 </div>
 
 
-*** /FRONT ***
-
-
 *** MAIN ***
 
 @import url("_korean_errata.css");
@@ -44,9 +58,6 @@
   src:  local('Nanum Brush Script'), url('_nanum-brush.woff') format('woff');}
 
 
-*** /MAIN ***
-
-
 *** BACK ***
 
 {{FrontSide}}
@@ -55,7 +66,7 @@
     <span class="backEnglish">{{edit:English}}</span>
 
     {{#Part of speech}}
-    <span class="partOfSpeech">({{Part of speech}})</span>
+    <span class="partOfSpeech"; style="padding-bottom:50px;">({{Part of speech}})</span>
     {{/Part of speech}}
 
     {{#Hanja}}
@@ -63,15 +74,15 @@
     <span class='hanja'>{{Hanja}}</span>
     {{/Hanja}}
 
-    {{#Alternate meanings}}
-    <span class="subhead">Alternate meanings:</span>
-    <span class='errata'>{{Alternate meanings}}</span>
-    {{/Alternate meanings}}
-
     {{#Note}}
     <span class="subhead">Note:</span>
     <span class='errata'>{{Note}}</span>
     {{/Note}}
+
+    {{#Alternate definitions}}
+    <span class="subhead">Alternate definitions:</span>
+    <span class='errata'>{{Alternate definitions}}</span>
+    {{/Alternate definitions}}
 
     {{#Common usages}}
     <span class="subhead">Common usages:</span>
@@ -89,12 +100,12 @@
     {{/한국어 사전}}
 
     {{#Other sentences}}
-    <span class='subhead';>Other sentences:</span>
+    <span class='subhead'>Other sentences:</span>
     <span class='errata'>{{Other sentences}}</span>
     {{/Other sentences}}
 
     {{#Other notes}}
-    <span class='subhead';>Other notes:</span>
+    <span class='subhead'>Other notes:</span>
     <span class='errata'>{{Other notes}}</span>
     {{/Other notes}}
 
@@ -108,5 +119,3 @@
         Tags: {{Tags}}
     </span>{{/Tags}}
 </div>
-
-*** /BACK ***
