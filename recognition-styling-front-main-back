@@ -109,6 +109,9 @@ Other notes
     <span class='errata'>{{Other notes}}</span>
     {{/Other notes}}
 
+    <span class='subhead'>Confused with:</span>
+    <span class='errata'>{{edit:Confused with}}</span>
+
     {{#Audio}}<span style="grid-column:1; font-size:1.7vw; text-align:left;">
         <a href="{{Audio}}">Original audio</a></span>
     {{/Audio}}
