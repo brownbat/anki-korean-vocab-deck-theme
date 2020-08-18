@@ -22,14 +22,14 @@ Confused with
 
 {{#Hint}}
         <span class='kr' aria-label="{{Hint}}" data-balloon-length="medium" data-balloon-pos="down" >
-            <tts service="googletts" pitch="0.0" profile="default" speed="1.0" voice="ko-KR-Wavenet-B">
+            <tts group="Korean" style="display: none">{{Korean}}</tts>
                 {{Korean}}*
             </tts>
         </span>
 {{/Hint}}
 {{^Hint}}
     <span class='kr'>
-        <tts service="googletts" pitch="0.0" profile="default" speed="1.0" voice="ko-KR-Wavenet-B">
+        <tts group="Korean" style="display: none">{{Korean}}</tts>
             {{Korean}}
         </tts>
     </span>
