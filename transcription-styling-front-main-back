@@ -25,7 +25,7 @@ Transcribe:
 {{/Audio}}
 
 {{type:Korean}}
-<tts service="googletts" pitch="0.0" profile="default" speed="1.0" voice="ko-KR-Wavenet-B" style="display: none">{{Korean}}</tts>
+<tts group="Korean" style="display: none">{{Korean}}</tts>
 
 *** MAIN ***
 
